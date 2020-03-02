@@ -1,0 +1,39 @@
+.burgerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    min-height: 2.25rem;
+    background-color: $black;
+    border: none;
+    z-index: 2;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    &__line {
+        position: relative;
+        height: 1px;
+        width: 1rem;
+        background-color: $white;
+
+        &:before,
+        &:after {
+            @extend .burgerBtn__line;
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            left: 0;
+            top: -5px;
+        }
+
+        &:after {
+            left: 0;
+            bottom: -5px;
+        }
+    }
+}

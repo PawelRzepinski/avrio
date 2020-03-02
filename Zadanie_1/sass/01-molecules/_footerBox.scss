@@ -1,0 +1,26 @@
+.footer__box {
+    margin-bottom:  2.5rem;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+
+    .footer__title {
+        position: relative;
+        font-size: $font-12;
+        font-weight: $regular-weight;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 1rem;
+        margin-bottom:  0.625rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 3.438rem;
+            height: 3px;
+            background-color: $white;
+        }
+    }
+}

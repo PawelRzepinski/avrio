@@ -1,0 +1,15 @@
+.bestseller {
+    margin: 1.563rem 0 1.25rem 0;
+
+    .sectionTitle {
+        letter-spacing: 5px;
+        margin-bottom: 1.25rem;
+    }
+
+    &__box {
+        @include media-breakpoint-up(md) {
+            display: flex;
+            
+        }
+    }
+}

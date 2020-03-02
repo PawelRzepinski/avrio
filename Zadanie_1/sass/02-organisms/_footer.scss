@@ -1,0 +1,33 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    padding-top: 1.25rem;
+
+    a:hover {
+        color: $gray;
+    }
+
+    .p--small {
+        color: $white;
+    }
+
+    .info__base {
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 4.375rem;
+        }
+    }
+
+    &__menu li{
+        text-transform: uppercase;
+    }
+
+    &__bottom {
+        width: 100%;
+        text-align: center;
+        padding: 0.625rem;
+        @include media-breakpoint-up(md) {
+            text-align: end;
+        }
+    }
+}

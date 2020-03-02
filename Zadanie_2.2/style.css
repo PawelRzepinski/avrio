@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 16%;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .4);
+}
+
+h4, p {
+    margin: 0 0 20px 0;
+}
